@@ -1,0 +1,23 @@
+.leadership-section {
+    .leadership-block-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 50px;
+        padding: 6rem 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .leadership-section {
+        .leadership-block-wrapper {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    .leadership-section {
+        .leadership-block-wrapper {
+            grid-template-columns: 1fr;
+        }
+    }
+}

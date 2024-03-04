@@ -1,0 +1,31 @@
+//UI Button Background
+$orange-btn-bg: #FF5E00;
+$orange-btn-bg-hover: #CE6222;
+$dark-orange-btn-bg: #E36306;
+$white-btn-bg: #FFFFFF;
+$dark-blue-btn-bg: #113563;
+
+//Color
+$header-blue-color:#113563;
+$footer-gray-color: #F2F2F2;
+$light-black-color: #333333;
+$light-gray-color: #FAFAFA;
+
+//Fonts
+$font-normal: 'Open Sans';
+$font-600: 'Open Sans Bold';
+$font-800: 'Open Sans ExtraBold';
+
+
+//Adaptive font-size
+$font-size-17px: calc(16px + (17 - 16) * ((100vw - 320px) / 1920));
+$font-size-20px: calc(16px + (20 - 16) * ((100vw - 320px) / 1920));
+$font-size-22px: calc(18px + (22 - 18) * ((100vw - 320px) / 1920));
+$font-size-24px: calc(24px + (24 - 24) * ((100vw - 320px) / 1920));
+$font-size-26px: calc(18px + (26 - 18) * ((100vw - 320px) / 1920));
+$font-size-32px: 32px;
+$font-size-34px: calc(34px + (34 - 34) * ((100vw - 320px) / 1920));
+$font-size-38px: calc(30px + (38 - 30) * ((100vw - 320px) / 1920));
+$font-size-52px: calc(34px + (52 - 34) * ((100vw - 320px) / 1920));
+$font-size-60px: calc(26px + (60 - 26) * ((100vw - 320px) / 1920));
+$font-size-80px: calc(42px + (90 - 42) * ((100vw - 320px) / 1920));

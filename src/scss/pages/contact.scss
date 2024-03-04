@@ -1,0 +1,402 @@
+.contact-us-page {
+    .contact-page-form {
+        padding-top: 1.875rem;
+        padding-bottom: 4rem;
+        background: $light-gray-color;
+        .contact-page-form_wrapper {
+            // padding-top: 6rem;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 150px;
+            .contact-page-form_description {
+                h2,h3,h4 {
+                    font-family: $font-600;
+                    font-size: $font-size-32px;
+                    line-height: 135%;
+                    color: $header-blue-color;
+                    margin-bottom: 0.9375rem;
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 170%;
+                    color: $light-black-color;
+                }
+            }
+            .contact-page-form_contact-form {
+                form { 
+                    span.wpcf7-not-valid-tip {
+                        margin-top: 0.625rem;
+                    }
+                    input, textarea {
+                        width: 100%;
+                        background: none;
+                        border: none;
+                        outline: none;
+                        border-bottom: 1px solid $light-black-color;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 170%;
+                        color: $light-black-color;
+                        padding: 0.75rem 0;
+                        &::placeholder {
+                            color: $light-black-color;
+                        }
+                    }
+                    input[type="checkbox"] {
+                        width: initial;
+                    }
+                    textarea {
+                        height: 80px;
+                        min-height: 60px;
+                        resize: vertical;
+                    }
+                    .custom-checkbox {
+                        margin-top: 2rem;
+                        margin-bottom: 2.5rem;
+                        display: flex;
+                        input[type="checkbox"] {
+                            width: 18px;
+                            height: 18px;
+                            min-width: 18px;
+                            margin: 0;
+                            padding: 0;
+                            appearance: none;
+                            border: 2px solid $orange-btn-bg;
+                            margin-right: 10px;
+                            margin-top: 3px;
+                            cursor: pointer;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                        input[type="checkbox"]:checked:before {
+                            content: "";
+                            width: 100%;
+                            height: 100%;
+                            background: $orange-btn-bg url('../../img/checkbox-arrow.svg') no-repeat center center/contain;
+                            display: block;
+                        }  
+                        label {
+                            span.label_check {
+                                font-style: italic;
+                                font-weight: 300;
+                                font-size: 14px;
+                                line-height: 175%;
+                                color: $light-black-color;
+                                a {
+                                    color: $light-black-color;
+                                }
+                            }
+                        }
+                    }
+                    input[type="submit"] {
+                        border: none !important;
+                        background: $orange-btn-bg !important;
+                        font-family: $font-600;
+                        font-size: 16px;
+                        line-height: 175%;
+                        color: #fff;
+                        padding: 0.625rem 3.75rem;
+                        cursor: pointer;
+                        width: auto;
+                        float: right;
+                        text-transform: uppercase;
+                        transition: all .3s;
+                        &:hover {
+                            background: $orange-btn-bg-hover !important;
+                            transition: all .3s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .contact-page-clutch {
+        background: #fff;
+        padding: 6rem 0;
+        .clutch-widget-parent {
+            .swiper.contact-clutch-slider {
+                .clutch-feedback-row {
+                    display: grid;
+                    grid-template-columns: 1.5fr 1fr;
+                    border: 2px solid #F2F2F2;
+                    .author-group {
+                        padding: 2.5rem 3rem;
+                        .author-info-row {
+                            display: flex;
+                            align-items: center;
+                            .author-photo {
+                                width: 60px;
+                                height: 60px;
+                                min-width: 60px;
+                                border-radius: 50%;
+                                overflow: hidden;
+                                margin-right: 1.25rem;
+                            }
+                            .author-name-and-position {
+                                .name {
+                                    font-family: $font-600;
+                                    font-size: $font-size-20px;
+                                    line-height: 27px;
+                                    color: $light-black-color;
+                                }
+                                .position {
+                                    font-size: 16px;
+                                    line-height: 150%;
+                                    color: $light-black-color;
+                                    opacity: 0.6;
+                                }
+                            }
+                        }
+                        .author-feedback {
+                            margin-top: 1.5625rem;
+                            h1,h2,h3,h4 {
+                                font-family: $font-600;
+                                font-size: $font-size-22px;
+                                line-height: 135%;
+                                color: $light-black-color;
+                                margin-bottom: 1.0625rem;
+                            }
+                            p {
+                                font-size: 16px;
+                                line-height: 170%;
+                                color: $light-black-color;
+                            }
+                        }
+                    }
+                    .clutch-group {
+                        padding: 2.5rem 2.1875rem;
+                        background: $light-gray-color;
+                        .logo-clutch {
+                            margin-bottom: 2rem;
+                        }
+                        .clutch-info-parent {
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            gap: 20px;
+                            .item {
+                                &:first-child {
+                                    grid-column-start: 1;
+                                    grid-column-end: 3;
+                                }
+                                .col-name {
+                                    font-family: $font-600;
+                                    font-size: 12px;
+                                    line-height: 130%;
+                                    color: $header-blue-color;
+                                    text-transform: uppercase;
+                                }
+                                .col-desc {
+                                    font-size: $font-size-17px;
+                                    line-height: 170%;
+                                    color: $light-black-color;
+                                }
+                            }
+                        }
+                        a.read-more-clutch {
+                            display: inline-block;
+                            font-size: 14px;
+                            line-height: 150%;
+                            color: $orange-btn-bg;
+                            text-decoration: none;
+                            margin-top: 3.5rem;
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+            .slider-navigate {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 2.6875rem;
+                .clutch-slider-arrow {
+                    cursor: pointer;
+                    width: 60px;
+                    height: 60px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    transition: all .3s;
+                    &:hover {
+                        background: rgba(32, 99, 184, 0.05);
+                        transition: all .3s;
+                    }
+                    &.swiper-button-disabled {
+                        cursor: default;
+                    }
+                }
+                .nav-testimonials-clutch-slider {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    margin: 0 2.5rem;
+                    span {
+                        width: 12px;
+                        height: 12px;
+                        min-width: 12px;
+                        min-height: 12px;
+                        background: #E9E9E9;
+                        margin: 0 0.6875rem;
+                        cursor: pointer;
+                        border-radius: 50%;
+                        &.swiper-pagination-bullet-active {
+                            background: $orange-btn-bg;
+                            cursor: default;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .contact-page-offices {
+        background-color: $header-blue-color;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding: 6rem 0;
+        .offices-wrap {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-column-gap: 28px;
+            grid-row-gap: 55px;
+            margin-top: 3.625rem;
+            .item {
+                .office-city {
+                    font-family: $font-600;
+                    font-size: $font-size-22px;
+                    line-height: 135%;
+                    color: #FFFFFF;
+                }
+                .office-position {
+                    font-size: 13px;
+                    line-height: 150%;
+                    color: #FFFFFF;
+                    &:after {
+                        content: '';
+                        display: block;
+                        width: 5px;
+                        height: 5px;
+                        background: $dark-orange-btn-bg;
+                        margin: 0.625rem 0 0.9375rem 0;
+                    }
+                }
+                .office-address {
+                    font-size: 15px;
+                    line-height: 170%;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+    .contact-map {
+        position: relative;  
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        cursor: pointer;
+        .message-scroll-map {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            color: #fff;
+            text-align: center;
+            font-size: calc(18px + 4 * ((100vw - 320px) / 1920));
+            line-height: 170%;
+            padding: 0 1.25rem;
+            pointer-events: none;
+            background: rgba(0,0,0,.7);
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            &.show {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+        #map {
+            height: 500px;
+            ymaps.ymaps-2-1-79-map-copyrights-promo,
+            ymaps.ymaps-2-1-79-copyright__wrap {
+                display: none !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-us-page {
+        .contact-page-form {
+            .contact-page-form_wrapper {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+        .contact-page-clutch {
+            .clutch-widget-parent {
+                .swiper.contact-clutch-slider {
+                    .clutch-feedback-row {
+                        grid-template-columns: 1fr;
+                    }
+                }
+            }
+        }
+        .contact-page-offices {
+            padding: 3rem 0;
+            .offices-wrap {
+                grid-template-columns: repeat(2,1fr);
+                grid-column-gap: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .contact-us-page {
+        .contact-page-offices {
+            .offices-wrap {
+                grid-template-columns: 1fr;
+                grid-column-gap: 0px;
+                grid-row-gap: 30px;
+            }
+        }
+        .contact-page-clutch {
+            .clutch-widget-parent {
+                .slider-navigate {
+                    .nav-testimonials-clutch-slider {
+                        margin: 0 1rem;
+                    }
+                }
+                .swiper.contact-clutch-slider {
+                    .clutch-feedback-row {
+                        .author-group {
+                            padding: 2rem 1.5rem;
+                        }
+                        .clutch-group {
+                            padding: 2rem 1.5rem;
+                            .clutch-info-parent {
+                                grid-template-columns: 1fr;
+                                .item {
+                                    &:first-child {
+                                        grid-column-start: inherit;
+                                        grid-column-end: inherit;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

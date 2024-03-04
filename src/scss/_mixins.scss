@@ -1,0 +1,58 @@
+@mixin hoverOrangeBtn($bg_hover) {
+    transition: all .5s ease-in-out;
+    z-index: 9;
+    overflow: hidden;
+    &:after {
+        background-color: $bg_hover;
+        content: "";
+        display: inline-block;
+        position: absolute;
+        width: 200%;
+        height: 100%;
+        right: 100%;
+        top: 50%;
+        left: inherit;
+        z-index: -90;
+        transition: all .5s ease-in-out;
+        transform: translateY(-50%);
+        border-radius: 0 200px 0 0;
+    }
+    &:hover {
+        color:#FFF;
+        border-color: $bg_hover;
+        transition: all .5s ease-in-out;
+    }
+    &:hover:after {
+        right: -100%;
+        transition: all .5s ease-in-out;
+    }
+}
+@mixin hoverBlueBtn($bg_button, $bg_hover) {
+    transition: all .5s ease-in-out;
+    z-index: 9;
+    overflow: hidden;
+    &:after {
+        background-color: $bg_hover;
+        content: "";
+        display: inline-block;
+        position: absolute;
+        width: 200%;
+        height: 100%;
+        right: 100%;
+        top: 50%;
+        left: inherit;
+        z-index: -90;
+        transition: all .5s ease-in-out;
+        transform: translateY(-50%);
+        border-radius: 0 200px 0 0;
+    }
+    &:hover {
+        color:#FFF;
+        border-color: $bg_hover;
+        transition: all .5s ease-in-out;
+    }
+    &:hover:after {
+        right: -100%;
+        transition: all .5s ease-in-out;
+    }
+}

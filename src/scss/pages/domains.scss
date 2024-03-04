@@ -1,0 +1,313 @@
+.child-page-content.domains-page {
+    padding-bottom: 0;
+    padding-top: 1.875rem;
+    .default-text-block {
+        h2,h3,h4 {
+            font-family: $font-800;
+            font-size: $font-size-24px;
+            line-height: 33px;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            color: $header-blue-color;
+            display: flex;
+            align-items: center;
+            padding: 0rem 0 3.625rem 0;
+            &:before {
+                content: "";
+                width: 77px;
+                height: 5px;
+                display: block;
+                background: $dark-orange-btn-bg;
+                margin-right: 1rem;
+            }
+            &.blue {
+                color: #113563;
+            }
+            &.white {
+                &:before {
+                    background: #fff;
+                }
+            }
+        }
+        p {
+            font-size: 16px;
+            line-height: 175%;
+            color: #333333;
+            margin-bottom: 1rem;
+            a {
+                color: $dark-orange-btn-bg;
+            }
+        }
+        ul {
+            margin: 1rem 0;
+            li {
+                display: flex;
+                align-items: center;
+                line-height: 180%;
+                &:before {
+                    content: "";
+                    min-width: 20px;
+                    min-height: 20px;
+                    background: url("../../img/bx_bx-check.svg") no-repeat center
+                        center/contain;
+                    display: block;
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+    .domains-home {
+        padding-bottom: 10rem;
+        background: none;
+        .domains-content {
+            background: url('../../img/world-line-bg.svg') no-repeat;
+            background-position: right bottom;
+            padding-top: 5rem;
+            .wrap-domains-block {
+                padding-top: 2rem;
+            }
+        }
+    }
+    .featured-clients-gallery {
+        background: $light-gray-color;
+        padding: 6rem 0;
+        .two-col-parent {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            .content {
+                h2,h3,h4 {
+                    font-family: $font-800;
+                    font-size: $font-size-24px;
+                    line-height: 33px;
+                    letter-spacing: 0.02em;
+                    text-transform: uppercase;
+                    color: $header-blue-color;
+                    display: flex;
+                    align-items: center;
+                    padding: 0;
+                    &:before {
+                        content: "";
+                        width: 77px;
+                        height: 5px;
+                        display: block;
+                        background: $dark-orange-btn-bg;
+                        margin-right: 1rem;
+                    }
+                    &.blue {
+                        color: #113563;
+                    }
+                    &.white {
+                        &:before {
+                            background: #fff;
+                        }
+                    }
+                }
+                p {
+                    font-size: $font-size-22px;
+                    line-height: 175%;
+                    color: #333333;
+                    margin-bottom: 1rem;
+                    a {
+                        color: $dark-orange-btn-bg;
+                    }
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+                ul {
+                    margin: 1rem 0;
+                    li {
+                        display: flex;
+                        align-items: center;
+                        line-height: 180%;
+                        &:before {
+                            content: "";
+                            min-width: 20px;
+                            min-height: 20px;
+                            background: url("../../img/bx_bx-check.svg") no-repeat center
+                                center/contain;
+                            display: block;
+                            margin-right: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            align-items: center;
+            gap: 70px;
+            margin-top: 6rem;
+            .item {
+                text-align: center;
+            }
+        }
+    }
+    .featured-cases {
+        padding: 6rem 0;
+        .featured-cases-parent {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 30px;
+            .text-portfolio {
+                h2,h3,h4,p {
+                    font-family: $font-600;
+                    font-size: $font-size-26px;
+                    line-height: 135%;
+                    color: $light-black-color;
+                }
+                a {
+                    text-decoration: none;
+                    font-family: $font-600;
+                    font-size: 16px;
+                    line-height: 175%;
+                    letter-spacing: 0.02em;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    padding: 0.625rem 2.5rem;
+                    display: inline-block;
+                    margin-top: 1.875rem;
+                    z-index: 0;
+                    transition: all 0.3s;
+                    position: relative;
+                    background: $dark-orange-btn-bg;
+                    @include hoverOrangeBtn($orange-btn-bg-hover);
+                }
+            }
+            .all-portfolio-parent {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 15px;
+                a.item-portfolio {
+                    text-decoration: none;
+                    .item-portfolio-parent {
+                        height: 370px;
+                        display: flex;
+                        align-items: flex-end;
+                        overflow: hidden;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        padding: 2.5rem;
+                        padding-bottom: 10px;
+                        position: relative;
+                        &:before {
+                            content: "";
+                            width: 100%;
+                            height: 100%;
+                            background: linear-gradient(180deg,transparent 50.05%,rgba(8,32,53,.94) 86.32%),linear-gradient(0deg,rgba(17,53,99,.57),rgba(17,53,99,.57));
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                        }
+                        &.hidden {
+                            opacity: 0;
+                            visibility: hidden;
+                            display: none;
+                        }
+                        .portfolio_img {
+                            width: 100%;
+                            height: 222px;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        .portfolio-item_content {
+                            position: relative;
+                            .portfolio_tag {
+                                display: flex;
+                                align-items: center;
+                                font-size: $font-size-17px;
+                                line-height: 170%;
+                                text-transform: uppercase;
+                                color: #fff;
+                                margin: 0 0 0.9375rem 0;
+                                &::before {
+                                    content: '';
+                                    display: block;
+                                    width: 40px;
+                                    height: 4px;
+                                    margin-right: 0.625rem;
+                                    background: $orange-btn-bg;
+                                }
+                            }
+                            .portfolio_title {
+                                margin-bottom: 1.5rem;
+                                font-family: $font-600;
+                                font-size: $font-size-20px;
+                                line-height: 150%;
+                                color: #fff;
+                            }
+                            .hover-cover {
+                                display: none;
+                            }
+                        }
+                        &:hover {
+                            .hover-cover {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 990px) {
+    .child-page-content.domains-page {
+        .featured-cases {
+            .featured-cases-parent {
+                grid-template-columns: 1fr;
+                .text-portfolio {
+                    text-align: center;
+                    order: 1;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .child-page-content.domains-page {
+        .default-text-block {
+            h2,h3,h4 {
+                padding: 0 0 1.5rem;
+            }
+        }
+        .domains-home {
+            padding-bottom: 4rem;
+            .domains-content {
+                padding-top: 3rem;
+            }
+        }
+        .featured-clients-gallery {
+            padding: 3rem 0;
+            .two-col-parent {
+                grid-template-columns: 1fr;
+            }
+            .gallery {
+                margin-top: 3rem;
+                grid-template-columns: repeat(3,1fr);
+                gap: 30px;
+            }
+        }
+        .featured-cases {
+            padding: 3rem 0;
+            .featured-cases-parent {
+                .all-portfolio-parent {
+                    grid-template-columns: 1fr;
+                    a.item-portfolio {
+                        .item-portfolio-parent {
+                            padding: 1.5rem;
+                            padding-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

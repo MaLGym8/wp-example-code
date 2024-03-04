@@ -1,0 +1,146 @@
+.child-page-content.technologies {
+    .child-page-description {
+        font-size: $font-size-17px;
+        line-height: 170%;
+        color: $light-black-color;
+        .two-col-parent {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 30px;
+            .content {
+                p {
+                    font-size: $font-size-17px;
+                    line-height: 170%;
+                    color: $light-black-color;
+                }
+                h1,h2,h3,h4 {
+                    font-family: $font-800;
+                    font-size: $font-size-24px;
+                    line-height: 130%;
+                    letter-spacing: .02em;
+                    text-transform: uppercase;
+                    color: $header-blue-color;
+                    display: flex;
+                    align-items: center;
+                    padding: 0 0 2rem;
+                    &:before {
+                        content: "";
+                        width: 77px;
+                        height: 5px;
+                        display: block;
+                        background: $dark-orange-btn-bg;
+                        margin-right: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    .technologies-wrap-block {
+        .item {
+            display: flex;
+            align-items: center;
+            padding: 1.375rem 0;
+            border-bottom: 3px solid $footer-gray-color;
+            &:last-child {
+                margin-bottom: 2.5rem;
+                border-bottom: none;
+            }
+            .technologies-name {
+                width: 100%;
+                max-width: 310px;
+                font-family: $font-800;
+                font-size: $font-size-22px;
+                line-height: 135%;
+                color: $light-black-color;
+                display: flex;
+                align-items: center;
+                &:before {
+                    content: '';
+                    min-width: 10px;
+                    min-height: 10px;
+                    background: $dark-orange-btn-bg;
+                    display: block;
+                    margin-right: 1rem;
+                }
+            }
+            .technologies-image {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                .technologies-image_item {
+                    width: 145px;
+                    background: $light-gray-color;
+                    margin: 0.5rem 0 0.5rem 1.875rem;
+                    height: 67px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 7px;
+                    img {
+                        max-width: 100%;
+                        max-height: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .bottom-banner {
+        padding: 5rem 0;
+        margin-top: 6rem;
+        background: linear-gradient(221.65deg,rgba(48,207,208,.6) 19.1%,rgba(51,8,103,.6) 86.88%),linear-gradient(285.39deg,rgba(17,53,99,.7) -5.22%,rgba(57,113,145,.7) 24.61%,rgba(30,79,130,.7) 70.14%,rgba(6,29,59,.7) 102.86%);
+        p,h2,h3,h4 {
+            font-family: $font-600;
+			font-size: $font-size-26px;
+			line-height: 175%;
+			color: #FFFFFF;
+            max-width: 1070px;
+            margin: 0 auto;
+        }
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .child-page-content.technologies {
+        .technologies-wrap-block {
+            .item {
+                flex-direction: column;
+                align-items: flex-start;
+                border-bottom: none;
+                padding: 0.9375rem 0;
+                .technologies-name {
+                    max-width: 100%;
+                    margin-bottom: 0.625rem;
+                }
+                .technologies-image {
+                    .technologies-image_item {
+                        width: 125px;
+                        margin: 0.625rem 0.625rem 0.625rem 0;
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .child-page-content.technologies {
+        .child-page-description {
+            .two-col-parent {
+                grid-template-columns: 1fr;
+                .content {
+                    h1,h2,h3 {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+        .bottom-banner {
+            padding: 2.5rem 0;
+            margin-top: 3rem;
+        }
+    }
+}

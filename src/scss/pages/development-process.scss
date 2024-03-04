@@ -1,0 +1,376 @@
+.development-process-page-content {
+    padding-top: 1.875rem;
+    .default-text-block {
+        p {
+            font-size: $font-size-17px;
+            line-height: 170%;
+            color: $light-black-color;
+            margin-bottom: 1.25rem;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        .warning-deliverables-row {
+            padding: 2.5rem 3rem;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.05);
+            display: flex;
+            margin-bottom: 3rem;
+            .warning-icon {
+                margin-top: 0.5rem;
+                max-width: 30px;
+                min-width: 13px;
+                margin-right: 1.5625rem;
+            }
+            .warning-text {
+                font-size: $font-size-17px;
+                line-height: 170%;
+                color: $light-black-color;
+            }
+        }
+    }
+    .phases-block {
+        .header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background: $light-gray-color;
+            padding: 2.5rem 4.375rem 2.5rem 0;
+            margin-top: 6rem;
+            margin-bottom: 3.75rem;
+            .title {
+                p,
+                h3,
+                h4 {
+                    word-break: break-word;
+                    font-family: $font-800;
+                    font-size: $font-size-24px;
+                    line-height: 33px;
+                    letter-spacing: 0.02em;
+                    text-transform: uppercase;
+                    color: $header-blue-color;
+                    display: flex;
+                    align-items: center;
+                    padding: 0 0 2rem 0;
+                    &:before {
+                        content: "";
+                        width: 77px;
+                        height: 5px;
+                        display: block;
+                        background: $dark-orange-btn-bg;
+                        margin-right: 1rem;
+                    }
+                }
+            }
+            .subtitle {
+                max-width: 700px;
+                padding: 0 0.5rem;
+                p {
+                    font-size: $font-size-17px;
+                    line-height: 170%;
+                    color: $light-black-color;
+                    margin-bottom: 1.25rem;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+        .goals-block {
+            display: grid;
+            grid-template-columns: 1fr 5fr;
+            .icon {
+                width: 100%;
+                max-width: 160px;
+                min-width: 130px;
+            }
+            .goals-description {
+                p {
+                    font-size: $font-size-17px;
+                    line-height: 180%;
+                    color: $light-black-color;
+                }
+                h3,
+                h4,
+                h5 {
+                    font-family: $font-600;
+                    font-size: $font-size-26px;
+                    line-height: 135%;
+                    color: $light-black-color;
+                    margin-bottom: 1.875rem;
+                }
+                ul {
+                    list-style: none;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    li {
+                        width: 45%;
+                        font-size: $font-size-17px;
+                        line-height: 180%;
+                        color: $light-black-color;
+                        margin-bottom: 0.9375rem;
+                        position: relative;
+                        padding-left: 1.75rem;
+                        &:before {
+                            content: "";
+                            width: 10px;
+                            height: 10px;
+                            background: $dark-orange-btn-bg;
+                            display: block;
+                            position: absolute;
+                            top: 10px;
+                            left: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .deliverables-block {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            padding: 3.125rem 0;
+            margin-top: 5rem;
+            .deliverables-block_title {
+                margin-bottom: 1.25rem;
+                p,
+                h2,
+                h3,
+                h4 {
+                    font-family: $font-600;
+                    font-size: $font-size-26px;
+                    line-height: 135%;
+                    color: #ffffff;
+                }
+            }
+            .what-do-you-get {
+                display: grid;
+                grid-template-columns: 2fr 3fr;
+                .title {
+                    p,
+                    h2,
+                    h3,
+                    h4 {
+                        font-family: $font-600;
+                        font-size: $font-size-20px;
+                        line-height: 170%;
+                        color: #ffffff;
+                    }
+                }
+                .what-do-you-get_values {
+                    padding-top: 2rem;
+                    &.two-columns {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        gap: 50px;
+                        .item {
+                            max-width: 200px;
+                        }
+                    }
+                    &.four-columns {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr 1fr;
+                        gap: 50px;
+                        .item {
+                            max-width: 150px;
+                        }
+                    }
+                    .item {
+                        .icon {
+                            max-width: 45px;
+                            height: 50px;
+                        }
+                        .description {
+                            margin-top: 0.9375rem;
+                            p,
+                            h2,
+                            h3,
+                            h4 {
+                                font-size: $font-size-17px;
+                                line-height: 170%;
+                                color: #ffffff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .warning-deliverables-row {
+            padding: 2.5rem 3rem;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.05);
+            margin-top: -6rem;
+            display: flex;
+            .warning-icon {
+                margin-top: 0.5rem;
+                max-width: 30px;
+                min-width: 13px;
+                margin-right: 1.5625rem;
+            }
+            .warning-text {
+                p, h2, h3, h4 {
+                    font-size: $font-size-17px;
+                    line-height: 170%;
+                    color: $light-black-color;
+                }
+            }
+        }
+        .project-management-parent {
+            .project-management-block {
+                display: grid;
+                grid-template-columns: 1.5fr 1fr;
+                gap: 50px;
+                margin-bottom: 3.75rem;
+                .text_project-management-block {
+                    grid-row: 1;
+                    h2,h3,h4,h5 {
+                        font-family: $font-800;
+                        font-size: $font-size-26px;
+                        line-height: 135%;
+                        color: $light-black-color;
+                        margin-bottom: 1.875rem;
+                    }
+                    p {
+                        font-size: $font-size-17px;
+                        line-height: 170%;
+                        color: $light-black-color;
+                        margin-bottom: 1.25rem;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+                &:nth-child(2n) {
+                    grid-template-columns: 1fr 1.5fr;
+                    .cover_project-management-block {
+                        grid-row: 1;
+                    }
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .bottom-banner {
+        padding: 5rem 0;
+        margin-top: 6rem;
+        background: linear-gradient(221.65deg, rgba(48, 207, 208, 0.6) 19.1%, rgba(51, 8, 103, 0.6) 86.88%), linear-gradient(285.39deg, rgba(17, 53, 99, 0.7) -5.22%, rgba(57, 113, 145, 0.7) 24.61%, rgba(30, 79, 130, 0.7) 70.14%, rgba(6, 29, 59, 0.7) 102.86%);
+        p, h3, h4, h2 {
+            font-family: $font-600;
+            font-size: $font-size-26px;
+            line-height: 175%;
+            color: #FFFFFF;
+            max-width: 1070px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .development-process-page-content {
+        .phases-block {
+            .deliverables-block {
+                .what-do-you-get {
+                    grid-template-columns: 1fr;
+                    .what-do-you-get_values {
+                        margin-top: 2rem;
+                    }
+                }
+            }
+            .project-management-parent {
+                .project-management-block {
+                    gap: 30px;
+                    grid-template-columns: 1fr;
+                    &:nth-child(2n) {
+                        grid-template-columns: 1fr;
+                    }
+                    .cover_project-management-block {
+                        text-align: center;
+                    }
+                    .text_project-management-block {
+                        grid-row: 2;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .development-process-page-content {
+        .default-text-block {
+            .warning-deliverables-row {
+                padding: 2.5rem 1rem;
+            }
+        }
+        .phases-block {
+            .header {
+                padding: 1.5rem;
+                margin-top: 3rem;
+            }
+            .goals-block {
+                grid-template-columns: 1fr;
+                .goals-description {
+                    margin-top: 2rem;
+                }
+            }
+            .deliverables-block {
+                .what-do-you-get {
+                    .what-do-you-get_values {
+                        padding-top: 0;
+                        &.four-columns {
+                            grid-template-columns: 1fr 1fr 1fr;
+                        }
+                    }
+                }
+            }
+            .warning-deliverables-row {
+                padding: 2.5rem 1rem;
+            }
+            .deliverables-block {
+                margin-top: 3rem;
+            }
+        }
+        .bottom-banner {
+            padding: 2.5rem 0;
+            margin-top: 3rem;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .development-process-page-content {
+        .phases-block {
+            .goals-block {
+                .goals-description {
+                    ul {
+                        flex-direction: column;
+                        li {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .deliverables-block {
+                .what-do-you-get {
+                    .what-do-you-get_values {
+                        &.four-columns {
+                            grid-template-columns: 1fr 1fr;
+                            .item {
+                                max-width: 100%;
+                            }
+                        }
+                        &.two-columns {
+                            grid-template-columns: 1fr;
+                            .item {
+                                max-width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

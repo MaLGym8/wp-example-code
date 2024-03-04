@@ -1,0 +1,241 @@
+.notfound-page-content {
+   .notfound-top-banner {
+        background: $header-blue-color;
+        padding: 25vh 0 20vh 0;
+        .notfound-banner-parent {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+            .notfound-text {
+                h1,h2,h3,h4 {
+                    font-family: $font-800;
+                    font-size: $font-size-60px;
+                    line-height: 120%;
+                    color: #FFFFFF;
+                    margin-bottom: 0.9375rem;
+                }
+                p {
+                    font-family: $font-600;
+                    font-size: $font-size-26px;
+                    line-height: 135%;
+                    color: #FFFFFF;
+                }
+                a {
+                    display: inline-block;
+                    font-family: $font-600;
+                    font-size: 16px;
+                    line-height: 175%;
+                    letter-spacing: 0.02em;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    padding: 0.625rem 2.5rem;
+                    background: $dark-orange-btn-bg;
+                    margin-top: 1.875rem;
+                    text-decoration: none;
+                    transition: all .3s;
+                    &:hover {
+                        background: $orange-btn-bg-hover;
+                        transition: all .3s;
+                    }
+                }
+            }
+            .thanks-text {
+                h1,h2,h3,h4 {
+                    font-family: $font-600;
+                    font-size: $font-size-26px;
+                    line-height: 120%;
+                    color: #FFFFFF;
+                    margin-bottom: 1.875rem;
+                }
+                p {
+                    font-size: $font-size-17px;
+                    line-height: 135%;
+                    color: #FFFFFF;
+                    margin-bottom: 0.625rem;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+                a {
+                    display: inline-block;
+                    font-family: $font-600;
+                    font-size: 16px;
+                    line-height: 175%;
+                    letter-spacing: 0.02em;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    padding: 0.625rem 2.5rem;
+                    background: $dark-orange-btn-bg;
+                    margin-top: 1.875rem;
+                    text-decoration: none;
+                    transition: all .3s;
+                    &:hover {
+                        background: $orange-btn-bg-hover;
+                        transition: all .3s;
+                    }
+                }
+            }
+        }
+    } 
+    .services-home {
+        background: $light-gray-color;
+    }
+    .portfolio-404 {
+        padding: 6rem 0;
+        .portfolio-404-parent {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 30px;
+            .text-portfolio {
+                h2,h3,h4,p {
+                    font-family: $font-600;
+                    font-size: $font-size-26px;
+                    line-height: 135%;
+                    color: $light-black-color;
+                }
+                a {
+                    text-decoration: none;
+                    font-family: $font-600;
+                    font-size: 16px;
+                    line-height: 175%;
+                    letter-spacing: 0.02em;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    background: $dark-orange-btn-bg;
+                    padding: 0.625rem 2.5rem;
+                    display: inline-block;
+                    margin-top: 1.875rem;
+                    transition: all .3s;
+                    z-index: 0;
+                    transition: all 0.3s;
+                    position: relative;
+                    background: $dark-orange-btn-bg;
+                    @include hoverOrangeBtn($orange-btn-bg-hover);
+                }
+            }
+            .all-portfolio-parent {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 15px;
+                a.item-portfolio {
+                    text-decoration: none;
+                    .item-portfolio-parent {
+                        height: 370px;
+                        display: flex;
+                        align-items: flex-end;
+                        overflow: hidden;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        padding: 2.5rem;
+                        padding-bottom: 10px;
+                        position: relative;
+                        &:before {
+                            content: "";
+                            width: 100%;
+                            height: 100%;
+                            background: linear-gradient(180deg,transparent 50.05%,rgba(8,32,53,.94) 86.32%),linear-gradient(0deg,rgba(17,53,99,.57),rgba(17,53,99,.57));
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                        }
+                        &.hidden {
+                            opacity: 0;
+                            visibility: hidden;
+                            display: none;
+                        }
+                        .portfolio_img {
+                            width: 100%;
+                            height: 222px;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        .portfolio-item_content {
+                            position: relative;
+                            .portfolio_tag {
+                                display: flex;
+                                align-items: center;
+                                font-size: $font-size-17px;
+                                line-height: 170%;
+                                text-transform: uppercase;
+                                color: #fff;
+                                margin: 0 0 0.9375rem 0;
+                                &::before {
+                                    content: '';
+                                    display: block;
+                                    width: 40px;
+                                    height: 4px;
+                                    margin-right: 0.625rem;
+                                    background: $orange-btn-bg;
+                                }
+                            }
+                            .portfolio_title {
+                                margin-bottom: 1.5rem;
+                                font-family: $font-600;
+                                font-size: $font-size-20px;
+                                line-height: 150%;
+                                color: #fff;
+                            }
+                            .hover-cover {
+                                display: none;
+                            }
+                        }
+                        &:hover {
+                            .hover-cover {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .notfound-page-content {
+        .portfolio-404 {
+            .portfolio-404-parent {
+                grid-template-columns: 1fr;
+                .text-portfolio {
+                    text-align: center;
+                    order: 1;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .notfound-page-content {
+        .notfound-top-banner {
+            padding: 15vh 0 10vh;
+            .notfound-banner-parent {
+                grid-template-columns: 1fr;
+                .notfound-text {
+                    text-align: center;
+                }
+                .notfound-img {
+                    text-align: center;
+                    order: -1;
+                }
+            }
+        }
+        .portfolio-404 {
+            padding: 3rem 0;
+            .portfolio-404-parent {
+                .all-portfolio-parent {
+                    grid-template-columns: 1fr;
+                    a.item-portfolio {
+                        .item-portfolio-parent {
+                            padding: 1.5rem;
+                            padding-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
